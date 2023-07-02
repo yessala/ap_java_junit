@@ -1,17 +1,27 @@
-
+/**
+ * 
+ */
 package dia1;
+
+import java.util.Scanner;
 
 /**
  * @author yessa
  *
  */
-public class Numerico {
+public class ElScannerNumerico {
+
 	public static void main(String[] args) {
-		int numero = 3;
+		int numero = obtenerNumero();
 
 		System.out.println("El doble de " + numero + " es: " + doble(numero));
 		System.out.println("El triple de " + numero + " es: " + triple(numero));
 
+	}
+
+	public static int obtenerNumero() {
+		Scanner leer = new Scanner(System.in);
+		return leer.nextInt();
 	}
 
 	public static int doble(int num) {
